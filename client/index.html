@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic</title>
+  <script src="https://cdn.zinggrid.com/zinggrid.min.js"></script>
+</head>
+
+<body>
+    
+  <zing-grid caption="CRUD NestJS Demo" editor-controls>
+    <zg-colgroup>
+      <zg-column index="name"></zg-column>
+      <zg-column index="age" type="number"></zg-column>
+    </zg-colgroup>
+    <zg-data>
+      <zg-param name="src" value="http://localhost:3000/api/users"></zg-param>
+      <zg-param name="idKey" value="_id"></zg-param>
+    </zg-data>
+  </zing-grid>
+</body>
+</html>
