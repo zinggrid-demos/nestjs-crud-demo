@@ -11,7 +11,7 @@ import { join } from 'path';
     UsersModule, 
     // MongooseModule.forRoot('mongodb://localhost:27017/test'),
     MongooseModule.forRoot('mongodb+srv://zingsoft:ZingDad1@cluster0.hnmzy.mongodb.net/?retryWrites=true&w=majority'),
-    ServeStaticModule.forRoot({rootPath: join(__dirname, '..', 'client'), exclude: ['/api*']}),
+    ServeStaticModule.forRoot({rootPath: join(__dirname, '..', 'public'), exclude: ['/api*']}),
   ],
   controllers: [AppController],
   providers: [AppService],
